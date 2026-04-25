@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqeel Ahmad — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+
+</head>
+
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Loading screen -->
+    <div id="loader">
+        <div class="loader-initials">AA</div>
+        <div class="loader-bar-wrap">
+            <div class="loader-bar"></div>
+        </div>
+        <div class="loader-text">Initializing Portfolio</div>
+    </div>
+
+    <!-- Particle canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <a href="#hero" class="nav-logo">Aqeel Ahmad</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-left">
+            <div class="hero-tag"><span class="dot"></span>Available for opportunities</div>
+            <h1 class="hero-name"><span class="shimmer-text">Aqeel Ahmad</span></h1>
+            <p class="hero-subtitle">Computer Scientist · STEM Educator · AI Enthusiast</p>
+            <p class="hero-sub2">Building smart, adaptive learning systems and crafting elegant web experiences.
+                Passionate
+                about AI, modern web technologies, and making education smarter.</p>
+            <div class="hero-ctas">
+                <a href="#projects" class="btn-primary"><span>🚀</span><span>View Projects</span></a>
+                <a href="#contact" class="btn-outline"><span>📬</span><span>Get in Touch</span></a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="card-3d">
+                <div class="card-3d-title">Quick Stats</div>
+                <div class="stat-row">
+                    <div class="stat-label">CGPA</div>
+                    <div>
+                        <div class="stat-val">3.75</div>
+                        <div class="stat-sub">out of 4.0</div>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label">Experience</div>
+                    <div>
+                        <div class="stat-val">4+</div>
+                        <div class="stat-sub">Roles</div>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label">Projects</div>
+                    <div>
+                        <div class="stat-val">2</div>
+                        <div class="stat-sub">Deployed</div>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label">Languages</div>
+                    <div>
+                        <div class="stat-val">3</div>
+                        <div class="stat-sub">Saraiki · Urdu · English</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-label">Technical Profile</div>
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="skills-grid" id="skillsGrid">
+            <div class="skill-item" data-pct="90">
+                <div class="skill-head"><span>HTML / CSS</span><span class="skill-pct">90%</span></div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="background:linear-gradient(90deg,#6366f1,#818cf8)"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-pct="78">
+                <div class="skill-head"><span>JavaScript</span><span class="skill-pct">78%</span></div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="background:linear-gradient(90deg,#ec4899,#f9a8d4)"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-pct="72">
+                <div class="skill-head"><span>Python / Django</span><span class="skill-pct">72%</span></div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="background:linear-gradient(90deg,#06b6d4,#67e8f9)"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-pct="65">
+                <div class="skill-head"><span>Machine Learning (Scikit-learn)</span><span class="skill-pct">65%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="background:linear-gradient(90deg,#f59e0b,#fcd34d)"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-pct="80">
+                <div class="skill-head"><span>Bootstrap / Tailwind</span><span class="skill-pct">80%</span></div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="background:linear-gradient(90deg,#6366f1,#ec4899)"></div>
+                </div>
+            </div>
+            <div class="skill-item" data-pct="85">
+                <div class="skill-head"><span>MS Office Suite</span><span class="skill-pct">85%</span></div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="background:linear-gradient(90deg,#06b6d4,#6366f1)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="chips">
+            <span class="chip"><span class="chip-icon">🧠</span>Artificial Intelligence</span>
+            <span class="chip"><span class="chip-icon">🌐</span>Web Development</span>
+            <span class="chip"><span class="chip-icon">🐍</span>Python</span>
+            <span class="chip"><span class="chip-icon">🎨</span>Responsive Design</span>
+            <span class="chip"><span class="chip-icon">📊</span>PostgreSQL</span>
+            <span class="chip"><span class="chip-icon">🛠️</span>VS Code</span>
+            <span class="chip"><span class="chip-icon">🎓</span>STEM Teaching</span>
+            <span class="chip"><span class="chip-icon">📱</span>Canva</span>
+            <span class="chip"><span class="chip-icon">📣</span>Social Media</span>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="section-label">Work History</div>
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <div class="tl-period">Dec 2025 — Present</div>
+                    <div class="tl-role">STEM Teacher</div>
+                    <div class="tl-org">LearnOBoats</div>
+                    <div class="tl-loc">📍 Islamabad, Pakistan</div>
+                </div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <div class="tl-period">Nov 2025 — Dec 2025</div>
+                    <div class="tl-role">Computer Science Teacher</div>
+                    <div class="tl-org">IIUI School PWD Campus Islamabad</div>
+                    <div class="tl-loc">📍 Islamabad, Pakistan</div>
+                </div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <div class="tl-period">Sep 2025 — Nov 2025</div>
+                    <div class="tl-role">Computer Teacher</div>
+                    <div class="tl-org">Al-Abbas Science School and College New Chura</div>
+                    <div class="tl-loc">📍 Dhakki, Pakistan</div>
+                </div>
+            </div>
+            <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <div class="tl-period">Apr 2022 — Dec 2023</div>
+                    <div class="tl-role">Maths & Physics Teacher</div>
+                    <div class="tl-org">Iqra School and College Dhakki</div>
+                    <div class="tl-loc">📍 Dhakki, Pakistan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="section-label">What I've Built</div>
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="proj-card">
+                <span class="proj-emoji">🧠</span>
+                <div class="proj-title">MindCraft — Smart Learning App</div>
+                <div class="proj-desc">A personalized web-based learning system (Final Year Project) that uses machine
+                    learning
+                    to recommend adaptive courses based on student performance and behavior. Features dashboards for
+                    both students
+                    and instructors, performance analytics, and adaptive learning paths.</div>
+                <div class="proj-tags">
+                    <span class="proj-tag tag-indigo">Django</span>
+                    <span class="proj-tag tag-pink">Python</span>
+                    <span class="proj-tag tag-cyan">Scikit-learn</span>
+                    <span class="proj-tag tag-amber">PostgreSQL</span>
+                    <span class="proj-tag tag-indigo">ML</span>
+                </div>
+                <a href="https://github.com/Aqeeel-Ahmad/MindCraft_FYP" class="proj-link" target="_blank">GitHub →</a>
+            </div>
+            <div class="proj-card">
+                <span class="proj-emoji">🛍️</span>
+                <div class="proj-title">UrbanVibes — E-commerce Fashion</div>
+                <div class="proj-desc">A fully responsive fashion e-commerce website featuring a dynamic homepage with
+                    promotional banners, product listings with hover effects, interactive shopping cart with animations,
+                    and
+                    mobile-first responsive layout for tablets and smartphones.</div>
+                <div class="proj-tags">
+                    <span class="proj-tag tag-pink">HTML</span>
+                    <span class="proj-tag tag-cyan">CSS</span>
+                    <span class="proj-tag tag-amber">JavaScript</span>
+                    <span class="proj-tag tag-indigo">Responsive</span>
+                </div>
+                <a href="https://aqeeel-ahmad.github.io/UrbanVibes-E-Commerce-Website/" class="proj-link"
+                    target="_blank">Live
+                    Demo →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="section-label">Academic Background</div>
+        <h2 class="section-title">Education</h2>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <span class="edu-badge badge-bs">BS Degree</span>
+                <div class="edu-degree">BS Computer Science</div>
+                <div class="edu-inst">University of Agriculture, Dera Ismail Khan</div>
+                <div class="edu-meta">Oct 2021 – Aug 2025<br>Dera Ismail Khan, Pakistan</div>
+                <div class="edu-grade">⭐ CGPA: 3.75 / 4.0</div>
+            </div>
+            <div class="edu-card">
+                <span class="edu-badge badge-fsc">FSc</span>
+                <div class="edu-degree">FSc — Pre-Engineering</div>
+                <div class="edu-inst">Professor Zubair School & College D.I.Khan</div>
+                <div class="edu-meta">Sep 2019 – Sep 2021<br>Dhakki, Pakistan</div>
+                <div class="edu-grade">📊 61.27%</div>
+            </div>
+            <div class="edu-card">
+                <span class="edu-badge badge-mat">Matriculation</span>
+                <div class="edu-degree">Matriculation</div>
+                <div class="edu-inst">Iqra Science School Paharpur, D.I.Khan</div>
+                <div class="edu-meta">Apr 2017 – Jun 2021<br>Paharpur, Pakistan</div>
+                <div class="edu-grade">🏆 86.72%</div>
+            </div>
+        </div>
+
+        <div class="section-label" style="margin-top:64px">Languages</div>
+        <div class="lang-grid">
+            <div class="lang-card">
+                <div class="lang-name">Saraiki</div>
+                <div class="lang-level">Mother Tongue</div>
+                <div class="lang-bars">
+                    <div class="lang-row"><span class="lang-row-label">All Skills</span>
+                        <div class="lang-dots"><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot filled"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lang-card">
+                <div class="lang-name">Urdu</div>
+                <div class="lang-level">Proficient (C1–C2)</div>
+                <div class="lang-bars">
+                    <div class="lang-row"><span class="lang-row-label">Listening</span>
+                        <div class="lang-dots"><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot filled"></span></div>
+                    </div>
+                    <div class="lang-row"><span class="lang-row-label">Speaking</span>
+                        <div class="lang-dots"><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot filled"></span></div>
+                    </div>
+                    <div class="lang-row"><span class="lang-row-label">Writing</span>
+                        <div class="lang-dots"><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot half"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lang-card">
+                <div class="lang-name">English</div>
+                <div class="lang-level">Independent (B1–C1)</div>
+                <div class="lang-bars">
+                    <div class="lang-row"><span class="lang-row-label">Listening</span>
+                        <div class="lang-dots"><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot"></span></div>
+                    </div>
+                    <div class="lang-row"><span class="lang-row-label">Speaking</span>
+                        <div class="lang-dots"><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot filled"></span><span
+                                class="lang-dot half"></span><span class="lang-dot"></span></div>
+                    </div>
+                    <div class="lang-row"><span class="lang-row-label">Writing</span>
+                        <div class="lang-dots"><span class="lang-dot filled"></span><span
+                                class="lang-dot filled"></span><span class="lang-dot filled"></span><span
+                                class="lang-dot"></span><span class="lang-dot"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-label">Say Hello</div>
+        <h2 class="section-title">Contact</h2>
+        <div class="avatar-wrap">
+            <div class="avatar-ripple"></div>
+            <div class="avatar-ripple"></div>
+            <div class="avatar-ripple"></div>
+            <div class="avatar-inner">AA</div>
+        </div>
+        <div class="contact-grid">
+            <a href="tel:+923499242768" class="contact-card">
+                <div class="cc-icon cc-icon-indigo">📞</div>
+                <div class="cc-label">Phone</div>
+                <div class="cc-value">+92 03499242768</div>
+            </a>
+            <a href="mailto:imaqeeelahmad@gmail.com" class="contact-card">
+                <div class="cc-icon cc-icon-pink">✉️</div>
+                <div class="cc-label">Email</div>
+                <div class="cc-value">imaqeeelahmad@gmail.com</div>
+            </a>
+            <a href="http://linkedin.com/in/aqeel-ahmad-a99760316" target="_blank" class="contact-card">
+                <div class="cc-icon cc-icon-cyan">💼</div>
+                <div class="cc-label">LinkedIn</div>
+                <div class="cc-value">aqeel-ahmad-a99760316</div>
+            </a>
+            <a href="https://github.com/Aqeeel-Ahmad" target="_blank" class="contact-card">
+                <div class="cc-icon cc-icon-amber">🐱</div>
+                <div class="cc-label">GitHub</div>
+                <div class="cc-value">github.com/Aqeeel-Ahmad</div>
+            </a>
+            <div class="contact-card" style="cursor:default">
+                <div class="cc-icon cc-icon-indigo">📍</div>
+                <div class="cc-label">Location</div>
+                <div class="cc-value">Islamabad, Pakistan</div>
+            </div>
+            <div class="contact-card" style="cursor:default">
+                <div class="cc-icon cc-icon-pink">🎂</div>
+                <div class="cc-label">Date of Birth</div>
+                <div class="cc-value">22 January 2004</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Crafted with ❤️ by <span>Aqeel Ahmad</span> · 2025</p>
+    </footer>
+
+
+</body>
+
+</html>
